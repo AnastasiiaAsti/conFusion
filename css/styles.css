@@ -63,3 +63,13 @@ body {
     left: 0;
     min-height: 300px;
 }
+
+.radio-section input[type="radio"] {
+    visibility: hidden;
+    position: fixed;
+    width: 0;
+}
+
+.smoking {
+    margin-top: 1rem;
+}

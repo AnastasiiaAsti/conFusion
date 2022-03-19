@@ -1,5 +1,4 @@
-<script>
-    $(document).ready(function(){
+$(document).ready(function(){
         $('#mycarousel').carousel({interval: 2000});
         $('#carouselButton').click(function() {
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
@@ -12,18 +11,13 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
-            });
-            });
-
-            $(document).ready(function(){
-$("#loginBtn").click(function(){
-    $("#loginModal").modal();
+        });
+    
+    $("#loginBtn").click(function() {
+        $("#loginModal").modal('toggle');
+    });
+    
+    $("#reservationBtn").click(function () {
+        $("#reservationModal").modal('toggle');
+    });
 });
-});
-
-$(document).ready(function(){
-$("#reservationBtn").click(function(){
-    $("#reservationModal").modal();
-});
-});
-</script>
